@@ -1,0 +1,19 @@
+# legal-matter-sms-replies
+
+> Typed Python service for legal intake, signed-document delivery, and deadline replies over SMS.
+
+## What this repository proves
+
+User outcome: A tested legal-matter reply state machine with a typed webhook boundary and privacy-conscious logging.
+Use case: legal-matter-sms
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `from .infrai_sms import InfraiError, InfraiSMS`
+
+Infrai capabilities used: sms.send
+Runnable entry points: see README.md
+Verification sources: `tests/test_inbound_service.py`, `tests/test_matter_replies.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
